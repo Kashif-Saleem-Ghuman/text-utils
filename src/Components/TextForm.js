@@ -30,8 +30,17 @@ export default function TextForm({ heading }) {
           <button className="btn btn-primary my-3" type="submit" onClick={handleUpClick}>Convert to Uppercase</button>
           <button className="btn btn-success ms-3" type="submit" onClick={handleDnClick}>Convert to lowercase</button>
         </div>
+        <div>
+          <span className="border bg-light p-1">
+            No. of Letters =
+            {text.length}
+          </span>
+          <span className="border bg-light p-1 mx-3">
+            No. of Words =
+            {text.split(' ').length}
+          </span>
+        </div>
       </div>
-
     </>
   );
 }
