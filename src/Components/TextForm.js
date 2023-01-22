@@ -23,7 +23,6 @@ export default function TextForm({ heading }) {
       <div className="container ">
         <div className="mb-3 mt-5">
           <h2>
-            heading=
             {heading}
           </h2>
           <textarea className="form-control" value={text} onChange={handleOnChange} id="exampleFormControlTextarea1" rows="8" />
